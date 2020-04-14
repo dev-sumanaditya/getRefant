@@ -1,1 +1,124 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+// colors
+// royal blue
+.blue {
+  color: #4169e1;
+}
+.blue-bg {
+  background-color: #4169e1;
+}
+//violet
+.violet {
+  color: #7f00ff;
+}
+.violet-bg {
+  background-color: #7f00ff;
+}
+// kelly green
+.green {
+  color: #4cbb17
+}
+.green-bg {
+  background-color: #4cbb17;
+}
+
+.gradient {
+  background: -webkit-linear-gradient(to right, #4169e1, #7f00ff, #4cbb17) !important;
+}
+
+
+
+// Fonts
+.heading {
+  font-family: 'Poppins', sans-serif;
+}
+.para {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+
+// layout
+.spacer {
+  flex-grow: 1;
+}
+.padding-main {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+
+
+
+
+// Components
+.btn-main {
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 10px 30px !important;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition-duration: 0.2s;
+
+  &:hover {
+    background-color: #0ac775;
+    border: 2px solid #0ac775;
+  }
+
+  &:active {
+    border: 2px solid #088b52;
+  }
+}
+
+
+
+
+
+// Responsive
+
+/* Desktop */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .padding-main {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+
+/* Tab */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .padding-main {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+
+/* tab/cellphone */
+@media (min-width: 481px) and (max-width: 767px) {
+  .padding-main {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/* Smartphone */
+@media (min-width: 320px) and (max-width: 480px) {
+  .padding-main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
