@@ -2,7 +2,7 @@
   <h1>GetRefant</h1>
   <p class="sub">Your ultimate destination for online assessment</p>
 
-  <div class="area">
+  <div class="area" *ngIf="!emailLogin">
     <p>Log in with one of the following:</p>
     <button type="button" class="google" name="google">
       <i class="fa fa-google" aria-hidden="true"></i>
@@ -12,10 +12,28 @@
       <i class="fa fa-facebook" aria-hidden="true"></i>
       <span>Facebook</span>
     </button>
-    <button type="button" name="email" class="email">
+    <button (click)="loginWithEmail()" type="button" name="email" class="email">
       <i class="fa fa-envelope" aria-hidden="true"></i>
       <span>Email</span>
     </button>
     <p>Dont have an account? <a href="/auth/signup">Sign Up</a> </p>
+  </div>
+
+  <div class="area" *ngIf="emailLogin">
+    <p>Enter your email and password.</p>
+
+    <div class="inp">
+      <i class="fa fa-envelope" aria-hidden="true"></i>
+      <input type="email" autocomplete="off" autocorrect="off" spellcheck="false" autocapitalize="none" name="email" placeholder="Email" required>
+    </div>
+
+    <div class="inp" style="margin-bottom: 5px;">
+      <i class="fa fa-lock" aria-hidden="true"></i>
+      <input type="password" autocomplete="off" autocorrect="off" spellcheck="false" autocapitalize="none" name="password" placeholder="Password" required>
+    </div>
+
+    <a href="/">Forgot your password?</a>
+
+    <button type="button" class="login" name="login" (click)="login()"> <i *ngIf="verifying" class="fa fa-circle-o-notch fa-spin" aria-hidden="true"></i> <span *ngIf="!verifying">Log in</span> </button>
   </div>
 </div>

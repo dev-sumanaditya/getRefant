@@ -7,8 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  public emailLogin = false;
+  public verifying = false;
+
   constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
+
+  public loginWithEmail() {
+    this.emailLogin = true;
+  }
+
+  public login() {
+    this.verifying = true;
+  }
 
 }

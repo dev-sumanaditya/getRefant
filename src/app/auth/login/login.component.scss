@@ -42,6 +42,7 @@
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      outline: none;
 
       i {
         font-size: 20px;
@@ -69,6 +70,59 @@
       background-color: rgba(14,30,37,.8);
       &:hover {
         background-color: rgba(14,30,37,.85);
+      }
+    }
+
+    .inp {
+      position: relative;
+      margin-bottom: 15px;
+
+      input {
+        padding: 10px 10px 10px 40px;
+        border: 2px solid #ddd;
+        width: 300px;
+        font-size: 14px;
+        border-radius: 5px;
+        outline: none;
+        box-sizing: border-box;
+        font-weight: 600;
+
+        &::placeholder {
+          color: rgb(99, 109, 114);
+        }
+
+        &:focus {
+          border: 2px solid #0ac775;
+        }
+      }
+
+      i {
+        position: absolute;
+        top: 10px;
+        left: 13px;
+        font-size: 20px;
+        color: rgb(99, 109, 114);
+      }
+    }
+
+    a {
+      font-size: 12px;
+      text-decoration: none;
+      color: rgb(89, 98, 102);
+    }
+
+    .login {
+      margin-top: 15px;
+      margin-bottom: 0px;
+      background-color: #0ac775;
+
+      &:hover {
+        background-color: #0baa65;
+      }
+
+      span {
+        font-size: 14px;
+        font-weight: 500;
       }
     }
   }
