@@ -14,5 +14,78 @@
     </div>
   </div>
 
-  <div style="height: 600px;"></div>
+  <div class="about padding-main">
+    <h2 class="heading">Everything You Need For Your Exam Preparation</h2>
+    <div class="items">
+      <div class="item" *ngFor="let item of info">
+        <img [src]="'/assets/main/icons/'+item.icon" alt="">
+        <h3 class="heading">{{item.name}}</h3>
+        <p class="para">{{item.text}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="start">
+    <button>GET STARTED</button>
+  </div>
+
+
+  <div class="video padding-main">
+    <h2>A New Innovative Online Assesment Platform</h2>
+    <div class="player">
+      <div class="l">
+        <video #vid (click)="play()" width="100%" poster="/assets/main/video/poster.jpg" controls controlsList="nodownload noremoteplayback" playsinline preload="none">
+          <source src="https://testapp.b-cdn.net/elearn.mp4" type='video/mp4'/>
+        </video>
+      </div>
+      <div class="r">
+        <h1>GetRefant <br> Online Assesment Software</h1>
+        <p class="para">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+        <button>Learn More</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="info padding-main">
+    <h1>Assesment Platform for New Era of Learning</h1>
+    <p class="para sub">An advanced assessment platform for students and professionals to enhance and test their skills.</p>
+    <div class="items">
+      <div class="item" *ngFor="let item of more">
+        <img [src]="'/assets/main/icons2/'+ item.img" alt="">
+        <h6 class="heading">{{item.name}}</h6>
+        <p class="para">One-stop-destination for examination, preparation, recruitment, and more. Specially designed online examination system to solve all your preparation worries. The platform is smooth to use with a translational flow of information.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="offer padding-main">
+    <div class="ofr">
+      <div class="l">
+        <h2 class="heading">GetRefant</h2>
+        <h3 class="heading">Unlock all Online Test Series for a Month Completely Free.</h3>
+      </div>
+      <div class="r">
+        <div class="sale">
+          <i class="fas fa-certificate"></i>
+          <h6>Special Offer</h6>
+        </div>
+        <div class="btm">
+            <h6>After Free Trial</h6>
+            <h5>₹75/month</h5>
+            <button class="btn-main">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
