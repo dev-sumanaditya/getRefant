@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { AboutRoutingModule } from './about-routing.module';
+import { ContactRoutingModule } from './contact-routing.module';
 import { DefaultComponent } from './default/default.component';
 
 
@@ -9,7 +9,7 @@ import { DefaultComponent } from './default/default.component';
   declarations: [DefaultComponent],
   imports: [
     CommonModule,
-    AboutRoutingModule
+    ContactRoutingModule
   ]
 })
-export class AboutModule { }
+export class ContactModule { }

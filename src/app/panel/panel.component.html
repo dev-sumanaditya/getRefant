@@ -1,42 +1,45 @@
 <div class="container">
-  <nav class="navbar padding-main">
+  <nav #navbar class="navbar padding-main">
     <a class="brand" href="/">GetRefant</a>
 
     <div class="spacer"></div>
 
     <div class="navs">
-      <div class="nav">
+      <a class="nav" [routerLink]="['/about']" [routerLinkActive]="['activeRoute']">
         <h4>ABOUT US</h4>
         <div class="line green-bg"></div>
-      </div>
-      <div class="nav">
+      </a>
+      <a class="nav" [routerLink]="['/tests']" [routerLinkActive]="['activeRoute']">
         <h4>TESTS</h4>
         <div class="line green-bg"></div>
-      </div>
-      <div class="nav">
+      </a>
+      <a class="nav" [routerLink]="['/pricing']" [routerLinkActive]="['activeRoute']">
         <h4>PRICING</h4>
         <div class="line green-bg"></div>
-      </div>
-      <div class="nav">
+      </a>
+      <a class="nav" [routerLink]="['/contact']" [routerLinkActive]="['activeRoute']">
         <h4>CONTACT US</h4>
         <div class="line green-bg"></div>
-      </div>
+      </a>
     </div>
 
-    <div class="nav btn-main">LOGIN</div>
+    <div class="nav btn-main" [routerLink]="['auth']">LOGIN</div>
 
     <div class="navs-sm">
       <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
   </nav>
 
-  <div class="loading" *ngIf="loading"></div>
+  <div #loading class="loading hide"></div>
 
-  <div class="outlet">
+  <main class="outlet">
     <router-outlet></router-outlet>
-  </div>
+  </main>
 
   <div class="footer padding-main">
+    <div class="blockmain" style="margin: 0 20px; color: rgba(245, 245, 245, 0.7); border-bottom: 1px solid #ddd; user-select: none;">
+      <h1>GetRefant</h1>
+    </div>
     <div class="block1">
       <div class="sec">
         <h2>COMPANY</h2>
