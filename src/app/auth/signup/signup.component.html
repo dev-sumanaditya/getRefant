@@ -1,1 +1,31 @@
-<p>signup works!</p>
+<div class="container">
+  <h1>GetRefant</h1>
+  <p class="sub">Your ultimate destination for online assessment</p>
+
+  <div class="area">
+    <p>Register to gain extended access:</p>
+    <div class="form">
+        <div class="inp">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <input tabindex="1" autocomplete="off" autocorrect="off" style="text-transform: capitalize;" spellcheck="false" autocapitalize="words" type="text" placeholder="First Name" required>
+        </div>
+        <div class="inp">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <input tabindex="2" autocomplete="off" autocorrect="off" style="text-transform: capitalize;" spellcheck="false" autocapitalize="words" type="text" placeholder="Last Name" required>
+        </div>
+        <div class="inp">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <input tabindex="3" autocomplete="off" autocorrect="off" spellcheck="false" autocapitalize="none" type="email" placeholder="Enter your Email" required>
+        </div>
+        <div class="inp">
+          <i class="fa fa-lock" aria-hidden="true"></i>
+          <input tabindex="4" autocomplete="off" autocorrect="off" spellcheck="false" autocapitalize="none" type="password" placeholder="Enter Password" required>
+        </div>
+        <div class="inp">
+          <i class="fa fa-lock" aria-hidden="true"></i>
+          <input tabindex="5" autocomplete="off" autocorrect="off" spellcheck="false" autocapitalize="none" type="password" placeholder="Confirm Password" required>
+        </div>
+        <button tabindex="6" type="button" class="login" name="login" (click)="login()"> <i *ngIf="verifying" class="fa fa-circle-o-notch fa-spin" aria-hidden="true"></i> <span *ngIf="!verifying">Register</span> </button>
+    </div>
+  </div>
+</div>

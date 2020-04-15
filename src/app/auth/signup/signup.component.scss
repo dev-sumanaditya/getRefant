@@ -1,0 +1,102 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+  h1 {
+    font-size: 34px;
+    color: white;
+    margin: 0;
+  }
+  p.sub {
+    font-size: 16px;
+    color: white;
+    margin-top: 0;
+  }
+
+  .area {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);
+    color: black !important;
+    border-radius: 10px;
+    margin: 40px 0;
+
+    p {
+      font-size: 13px;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+
+      .inp {
+        position: relative;
+        margin-bottom: 15px;
+
+        input {
+          padding: 10px 10px 10px 40px;
+          border: 2px solid #ddd;
+          width: 300px;
+          font-size: 14px;
+          border-radius: 5px;
+          outline: none;
+          box-sizing: border-box;
+          font-weight: 600;
+
+          &::placeholder {
+            color: rgb(99, 109, 114);
+          }
+
+          &:focus {
+            border: 2px solid #0ac775;
+          }
+        }
+
+        i {
+          position: absolute;
+          top: 10px;
+          left: 13px;
+          font-size: 20px;
+          color: rgb(99, 109, 114);
+        }
+      }
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        width: 300px;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        outline: none;
+        margin-top: 15px;
+        margin-bottom: 0px;
+        background-color: #0ac775;
+        font-size: 14px;
+        font-weight: 500;
+
+        &:hover {
+          background-color: #0baa65;
+        }
+
+        i {
+          font-size: 20px;
+          margin-right: 5px;
+        }
+        span {
+          font-size: 16px;
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+}
